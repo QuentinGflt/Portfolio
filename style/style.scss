@@ -21,6 +21,7 @@ section{
         height: 10%;
         background: transparent;
         position: relative;
+        z-index:55555;
         
         ol{
             list-style: none;
@@ -33,7 +34,7 @@ section{
             }
     
 
-            .about, .back{
+            .about{
                 color: rgb(160, 159, 159);
                 font-family: 'Quicksand', sans-serif;
                 font-size: 1rem;
