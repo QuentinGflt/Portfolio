@@ -21,6 +21,7 @@ section nav {
   height: 10%;
   background: transparent;
   position: relative;
+  z-index: 555555;
 }
 
 section nav ol {
@@ -40,7 +41,7 @@ section nav ol {
   }
 }
 
-section nav ol .about, section nav ol .back {
+section nav ol .about {
   color: #a09f9f;
   font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
@@ -51,7 +52,7 @@ section nav ol .about, section nav ol .back {
   transition: 0.5s;
 }
 
-section nav ol .about:hover, section nav ol .back:hover {
+section nav ol .about:hover {
   color: white;
 }
 
@@ -152,6 +153,19 @@ section .contenu .carroussel ol li {
   }
 }
 
+section .contenu .carroussel ol li img {
+  width: 100%;
+  min-width: 500px;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  section .contenu .carroussel ol li img {
+    min-width: 350px;
+  }
+}
+
 section .contenu .carroussel ol li span {
   position: absolute;
   width: 100%;
@@ -185,26 +199,15 @@ section .contenu .carroussel ol li span {
 
 @media (max-width: 425px) {
   section .contenu .carroussel ol li span {
-    width: 78%;
-    margin-left: 37px;
+    width: 87%;
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
     font-size: 15px;
   }
 }
 
 section .contenu .carroussel ol li:hover span {
   opacity: 1;
-}
-
-section .contenu .carroussel ol li img {
-  width: 100%;
-  min-width: 500px;
-  height: 100%;
-}
-
-@media (max-width: 425px) {
-  section .contenu .carroussel ol li img {
-    min-width: 350px;
-  }
 }
 
 section .bottom-bar {
